@@ -1,0 +1,25 @@
+<%- include("./partials/header") -%>
+<div class="skewert">
+  <div class="skewer">
+    <div class="content-container">
+      <h1 class="content">Hello Friend</h1>
+      <p class="content"><%=stringcontent%></p>
+    </div>
+  </div>
+</div>
+
+<% posts.forEach(function(p) { %>
+<div class="post">
+  <h1><%=p.title%></h1>
+  <p>
+    <%= p.content.substring(0,100) + "..." %>
+  </p>
+  <a href="/posts/<%=p.title %>">Read More</a>
+</div>
+<% }) %>
+<a href="/compose" class="adderBtn">+</a>
+<!-- please change the footer in style.css after changing the text -->
+<footer class="footerHome">
+  <p>copyright: 2020</p>
+  <p>made by mojyseo</p>
+</footer>

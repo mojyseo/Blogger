@@ -1,0 +1,22 @@
+<%- include("./partials/header") -%>
+<div class="formGroup">
+  <h1>Compose a post :</h1>
+  <form method="post">
+    <label for="postTitle">Title:</label>
+    <input type="text" name="postTitle" required />
+    <label for="postBody">Post:</label>
+    <textarea
+      type="text"
+      name="postBody"
+      rows="14"
+      cols="30"
+      required
+      wrap=""
+    ></textarea>
+    <button type="submit" class="publishBtn" accesskey="Enter">publish</button>
+  </form>
+</div>
+<footer class="footerCompose">
+  <p>copyright: 2020</p>
+  <p>made by mojyseo</p>
+</footer>
